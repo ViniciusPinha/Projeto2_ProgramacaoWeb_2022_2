@@ -35,25 +35,43 @@
 
 
         <div id="login_box" class="login">
-            <form>
-                <div class="Logincontainer">
-                    <label for="uname"><b>Usuário</b></label>
-                    <input type="text" placeholder="Digite seu usuário" name="uname" required>
-                
-                    <label for="psw"><b>Senha</b></label>
-                    <input type="password" placeholder="Digite sua senha" name="psw" required>
-                
-                    <button type="submit" class="submit_btn">Login</button>
-                    <button type="button" onclick="document.getElementById('login_box').style.display='none'" class="cancelbtn">Fechar</button>
-                </div>
-            </form>
+           <div id="Logincontainer" class="Logincontainer">
+                <label for="uname" id="uname"><b>Usuário</b></label>
+                <input id="inputUname" type="text" placeholder="Digite seu usuário" name="email" required>
+                <label for="psw" id="psw"><b>Senha</b></label>
+                <input id="inputPsw" type="password" placeholder="Digite sua senha" name="password" required>
+                <input id="submit_buton" type="submit" class="submit_btn" value="Login"> </button>
+                <button type="button" onclick="document.getElementById('login_box').style.display='none'" class="cancelbtn">Fechar</button>
+            </div>
+            <select name="nacionalidades" id="nacionalidades">
+                <option value=null>Selecione a nacionalidade</option>
+                <option value="AU">AU</option>
+                <option value="BR">BR</option>
+                <option value="CA">CA</option>
+                <option value="CH">CH</option>
+                <option value="DE">DE</option>
+                <option value="DK">DK</option>
+                <option value="ES">ES</option>
+                <option value="FI">FI</option>
+                <option value="FR">FR</option>
+                <option value="GB">GB</option>
+                <option value="IE">IE</option>
+                <option value="IR">IR</option>
+                <option value="NO">NO</option>
+                <option value="NL">NL</option>
+                <option value="NZ">NZ</option>
+                <option value="TR">TR</option>
+                <option value="US">US</option>
+            </select>
         </div>
+
+        
 
 
 
     </header>
     <body>
-        <div class="landing-page">
+        <div id="landing-page" class="landing-page">
             <div class="container">
                 <div class="landing-top">
                     <div class="row">
@@ -81,5 +99,6 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
